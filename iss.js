@@ -12,7 +12,6 @@ const fetchMyIP = function(callback) {
     } else if (!error) {
       const data = JSON.parse(body);
       callback(error,data.ip);
-      userIP = data.ip;
     }
   });
 };
