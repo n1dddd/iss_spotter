@@ -36,10 +36,14 @@ const flyOverDateAndTime = function(passTimes) {
 };
 
 
-nextISSTimesForMyLocation((error,passTimes) => {
-  if (error) {
-    return console.log("It didn't work!: ", error);
-  }
-  flyOverDateAndTime(passTimes);
-});
+// nextISSTimesForMyLocation((error,flyOverData) => {
+//   if (error) {
+//     return console.log("It didn't work!: ", error);
+//   }
+//   flyOverDateAndTime(flyOverData);
+// });
+
+module.exports = {
+  flyOverDateAndTime
+}
 
